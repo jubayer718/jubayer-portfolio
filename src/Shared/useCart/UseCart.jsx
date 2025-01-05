@@ -7,7 +7,7 @@ const UseCart = () => {
    const {  data:cart=[] } = useQuery({
     queryKey: ['cart'],
     queryFn: () =>
-      fetch('http://localhost:3000/projects')
+      fetch('https://porfolio-server-ntqczh0xi-jubayer718s-projects.vercel.app/projects')
       .then((res) =>
         res.json(),
       ).then(data => {
